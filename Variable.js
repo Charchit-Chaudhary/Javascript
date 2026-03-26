@@ -16,3 +16,4 @@ console.log(c===d)// false because it checks both value and data type
 
 const pi=3.14;
 console.log(pi);
+
