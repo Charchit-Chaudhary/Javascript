@@ -31,86 +31,6 @@ if(num5 > largest) { largest = num5; } // swap if bigger
 
 console.log(`Largest number is ${largest}`);
 
-let sub1=85, sub2=92, sub3=67, sub4=45, sub5=78;// first piece
-
-const total=sub1+sub2+sub3+sub4+sub5// second piece
-console.log(total)
-const average=Math.round(total/5);
-console.log(average)
-
-if(sub1 >= 90) {
-    console.log(`Subject 1: ${sub1} → A+`);
-} else if(sub1 >= 80) {
-    console.log(`Subject 1: ${sub1} → A`);
-} else if(sub1 >= 70) {
-    console.log(`Subject 1: ${sub1} → B+`);
-} else if(sub1 >= 60) {
-    console.log(`Subject 1: ${sub1} → B`);
-} else if(sub1 >= 50) {
-    console.log(`Subject 1: ${sub1} → C`);
-} else {
-    console.log(`Subject 1: ${sub1} → Fail`);
-}
-//Second block for sub2;
-if(sub2 >= 90) {
-    console.log(`Subject 2: ${sub2} → A+`);
-} else if(sub2 >= 80) {
-    console.log(`Subject 2: ${sub2} → A`);
-} else if(sub2 >= 70) {
-    console.log(`Subject 2: ${sub2} → B+`);
-} else if(sub2 >= 60) {
-    console.log(`Subject 2: ${sub2} → B`);
-} else if(sub2 >= 50) {
-    console.log(`Subject 2: ${sub2} → C`);
-} else {
-    console.log(`Subject 2: ${sub2} → Fail`);
-}
-//Third block for sub3;
-if(sub3 >= 90) {
-    console.log(`Subject 3: ${sub3} → A+`);
-} else if(sub3 >= 80) {
-    console.log(`Subject 3: ${sub3} → A`);
-} else if(sub3 >= 70) {
-    console.log(`Subject 3: ${sub3} → B+`);
-} else if(sub3 >= 60) {
-    console.log(`Subject 3: ${sub3} → B`);
-} else if(sub3 >= 50) {
-    console.log(`Subject 3: ${sub3} → C`);
-} else {
-    console.log(`Subject 3: ${sub3} → Fail`);
-}
-//Fouth block for sub4
-if(sub4 >= 90) {
-    console.log(`Subject 4: ${sub4} → A+`);
-} else if(sub4 >= 80) {
-    console.log(`Subject 4: ${sub4} → A`);
-} else if(sub4 >= 70) {
-    console.log(`Subject 4: ${sub4} → B+`);
-} else if(sub4 >= 60) {
-    console.log(`Subject 4: ${sub4} → B`);
-} else if(sub4 >= 50) {
-    console.log(`Subject 4: ${sub4} → C`);
-} else {
-    console.log(`Subject 4: ${sub4} → Fail`);
-}
-//Fifth vlock for subject 5
-if(sub5 >= 90) {
-    console.log(`Subject 5: ${sub5} → A+`);
-} else if(sub5 >= 80) {
-    console.log(`Subject 5: ${sub5} → A`);
-} else if(sub5 >= 70) {
-    console.log(`Subject 5: ${sub5} → B+`);
-} else if(sub5 >= 60) {
-    console.log(`Subject 5: ${sub5} → B`);
-} else if(sub5 >= 50) {
-    console.log(`Subject 5: ${sub5} → C`);
-} else {
-    console.log(`Subject 5: ${sub5} → Fail`);
-}
-
-console.log(`Total: ${total}/500`);
-console.log(`Average: ${average}`);
-console.log(average>=50 ? "passed" :"Failed");
 
 for(let i = 1; i <= 4; i++) {
     for(let j = 1; j <= 4; j++) {
@@ -118,4 +38,31 @@ for(let i = 1; i <= 4; i++) {
             console.log(`${i} x ${j} = ${i*j}`);
         }
     }
+}
+
+
+
+for(let i = 1; i <= 4; i++) {
+    for(let j = 1; j <= 4; j++) {
+        if(i === j) {
+            console.log(`${i} x ${j} = ${i*j}`);
+        }
+    }
+}
+for(let i=1; i<=30; i++){
+    
+    if(i%3===0 && i%5===0){
+        console.log("Fizzbuzz")
+    }
+    else if(i%3===0){
+        console.log("Fizz");
+    }
+    else if(i%5===0){
+        console.log("buzz")
+    }
+    else{
+        
+    console.log(i); // print number when none of the above match
+}
+    
 }
